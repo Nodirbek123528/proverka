@@ -90,6 +90,7 @@
             font-weight: 400;
             font-size: 16px;
             color: $gray-600;
+            background-color: rgb(233, 240, 240);
 
             @include hover() {
                 &:hover {
