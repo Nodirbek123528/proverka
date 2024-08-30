@@ -8,6 +8,15 @@
     display: flex;
     column-gap: 1px;
     height: 257px;
+    @media screen and (max-width:770px) {
+      height: 217px;
+        
+    }
+    @media screen and (max-width:700px) {
+      height: 217px;
+      width: 344px;
+        
+    }
   }
 
   &-content {
@@ -18,6 +27,10 @@
     flex-direction: column;
     border-radius: 6px 0 0 6px;
     overflow: hidden;
+    @media screen and (max-width:770px) {
+      width: 240px;
+        
+    }
 
     &::before{
       content: "";
@@ -67,6 +80,9 @@
       line-height: 19px;
       z-index: 2;
       @include trn();
+      @media screen and (max-width:700px) {
+        font-size: 12px;
+      }
 
       @include hover() {
         &:hover {
@@ -81,19 +97,35 @@
     width: calc(100% - 282px);
     display: flex;
     flex-wrap: wrap;
+    @media screen and (max-width:700px) {
+      overflow-y: scroll;
+      width: 100%;
+        
+    }
   }
-
+  
   &-product {
     width: 224px;
     height: 128px;
     padding: 20px 16px;
     position: relative;
     border: 1px solid $gray-300;
+    @media screen and (max-width:770px) {
+      width: 190px;
+        
+    }
+    @media screen and (max-width:700px) {
+      height: 108px;
+        
+    }
     
     &__title {
       font-size: 16px;
       font-weight: 400;
       line-height: 120%;
+      @media screen and (max-width:770px) {
+        font-size: 14px;
+      }
     }
     
     &__price {
@@ -102,6 +134,9 @@
       line-height: 130%;
       color: $gray-500;
       margin-top: 8px;
+      @media screen and (max-width:770px) {
+        font-size: 10px;
+      }
     }
 
     &__image{
@@ -110,6 +145,10 @@
       position: absolute;
       bottom: 8px;
       right: 8px;
+      @media screen and (max-width:700px) {
+        bottom: 2px;
+        right: 2px;
+      }
 
       img{
         width: 100%;
