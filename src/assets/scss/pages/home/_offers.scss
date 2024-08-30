@@ -8,11 +8,24 @@
     display: flex;
     height: 240px;
     column-gap: 10px;
+    @media screen and (max-width:700px) {
+      column-gap: 0px;
+      
+      
+    }
+  
   }
   
   &-content{
     width: 280px;
     padding: 20px;
+    @media screen and (max-width:700px) {
+      border-right: 1px solid $gray-300;
+      // padding-left: 10px;
+      width: 200px;
+      
+      
+    }
   }
   
   &-title{
@@ -62,6 +75,14 @@
     width: calc(100% - 295px);
     display: flex;
     overflow: hidden;
+    @media screen and (max-width:700px) {
+      // padding-left: 10px;
+      overflow-x: scroll;
+      width: 100%;
+
+      
+      
+    }
   }
   
   &-product{

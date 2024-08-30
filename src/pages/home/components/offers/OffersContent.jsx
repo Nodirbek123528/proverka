@@ -34,7 +34,7 @@ function OffersContent() {
     return String(a).padStart('2', '0')
   }
 
-  setInterval(() => generateTime('05/30/2024'), 1000)
+  setInterval(() => generateTime('10/30/2024'), 1000)
   return (
     <div className="offers-content">
       <h4 className="offers-title">Deals and offers</h4>
