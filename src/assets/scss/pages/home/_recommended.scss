@@ -14,9 +14,10 @@
 
   &-products{
     display: flex;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 20px;
     @media screen and (max-width:770px) {
+      flex-wrap: nowrap;
       gap: 10px;
       overflow-x: scroll;
 
