@@ -13,8 +13,7 @@
         
     }
     @media screen and (max-width:700px) {
-      height: 217px;
-      width: 344px;
+      width: 335px;
         
     }
   }
@@ -98,7 +97,7 @@
     display: flex;
     flex-wrap: wrap;
     @media screen and (max-width:700px) {
-      overflow-y: scroll;
+      overflow-x: scroll;
       width: 100%;
         
     }
